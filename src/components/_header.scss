@@ -1,0 +1,64 @@
+header {
+  background: $color-primary;
+  color: $color-background;
+
+  display: flex;
+  flex-direction: row;
+  height: 2em;
+}
+
+header a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 1ch;
+  height: 2em;
+  line-height: 2em;
+}
+
+header a:hover {
+  background: $color-secondary;
+  color: $color-primary;
+}
+
+header a.active {
+  background: $color-background;
+  color: $color-primary;
+}
+
+header > a.logo {
+  height: 2em;
+  width: 7em;
+}
+
+header > a.logo svg {
+  height: 100%;
+  vertical-align: top;
+  margin-right: 1ch;
+  fill: currentColor;
+}
+
+header > nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2ch;
+}
+
+header > nav > .spacer {
+  flex-grow: 1;
+}
+
+header.sub {
+  background: $color-background;
+  color: $color-primary;
+  padding-left: 7em;
+}
+
+header.sub a {
+  color: $color-secondary;
+}
+
+header.sub a.active {
+  text-decoration: underline;
+  color: $color-primary;
+}

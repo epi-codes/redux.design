@@ -1,0 +1,9 @@
+$color-primary: #FFBB00;
+$color-secondary: scale-color($color-primary, $lightness: -60%);
+$color-background: scale-color($color-primary, $lightness: -95%);
+
+$font-family: 'VT323', monospace;
+$font-size: 25px;
+$line-height: 1;
+
+$thin-width: 480px;
