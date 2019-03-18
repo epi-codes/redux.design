@@ -1,39 +1,39 @@
-header {
-  background: $color-primary;
-  color: $color-background;
+/*header {
+  background: $color-1;
+  color: $color-4;
 
   display: flex;
   flex-direction: row;
-  height: 2em;
+  height: $layout-header-height;
 }
 
 header a {
   text-decoration: none;
   display: inline-block;
-  padding: 0 1ch;
-  height: 2em;
-  line-height: 2em;
+  padding: 0 .5rem;
+  height: $layout-header-height;
+  line-height: $layout-header-height;
 }
 
 header a:hover {
-  background: $color-secondary;
-  color: $color-primary;
+  background: $color-2;
+  color: $color-1;
 }
 
 header a.active {
-  background: $color-background;
-  color: $color-primary;
+  background: $color-3;
+  color: $color-1;
 }
 
 header > a.logo {
-  height: 2em;
-  width: 7em;
+  height: $layout-header-height;
+  width: 7rem;
 }
 
 header > a.logo svg {
   height: 100%;
   vertical-align: top;
-  margin-right: 1ch;
+  margin-right: .5rem;
   fill: currentColor;
 }
 
@@ -41,7 +41,7 @@ header > nav {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  padding-left: 2ch;
+  padding-left: 1rem;
 }
 
 header > nav > .spacer {
@@ -49,16 +49,64 @@ header > nav > .spacer {
 }
 
 header.sub {
-  background: $color-background;
-  color: $color-primary;
-  padding-left: 7em;
+  background: $color-3;
+  color: $color-1;
+  padding-left: 7rem;
 }
 
 header.sub a {
-  color: $color-secondary;
+  color: $color-2;
 }
 
 header.sub a.active {
   text-decoration: underline;
-  color: $color-primary;
+  color: $color-1;
+}*/
+
+header {
+  display: flex;
+  height: $layout-header-height;
+  background: $color-1;
+  color: $color-4;
+
+  a {
+    display: inline-block;
+    padding: .5rem;
+    height: 2rem;
+    text-decoration: none;
+
+    &.active {
+      background: $color-3;
+      color: $color-1;
+    }
+
+    &:hover {
+      background: $color-2;
+      color: $color-1;
+    }
+  }
+
+  > .header-branding {
+    width: $layout-header-branding-width;
+    flex-shrink: 0;
+  }
+
+  > nav {
+    flex-grow: 1;
+    color: $color-4;
+  }
+}
+
+nav.header-subnav {
+  padding-left: $layout-header-branding-width;
+  background: $color-3;
+  color: $color-2;
+
+  a {
+
+    &.active {
+      background: $color-3;
+      color: $color-1;
+    }
+  }
 }

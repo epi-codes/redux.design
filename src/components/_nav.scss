@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  color: $color-1;
+  overflow-x: auto;
+
+  a {
+    display: inline-block;
+    padding: .5rem;
+    height: 2rem;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &.active {
+      background: $color-1;
+      color: $color-4;
+    }
+
+    &:hover {
+      background: $color-2;
+      color: $color-1;
+    }
+  }
+
+  .spacer {
+    flex-grow: 1;
+  }
+}
+
+nav.nav-vertical {
+  flex-direction: column;
+
+  a {
+    position: relative;
+
+    &:after {
+      content: ">";
+      position: absolute;
+      right: .5rem;
+    }
+  }
+}

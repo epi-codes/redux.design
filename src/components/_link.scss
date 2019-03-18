@@ -1,3 +1,20 @@
 a {
   color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a[href*="//"]:not([href*="epi.codes"]) {
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: top;
+    background: currentColor; // todo add external link icon
+    margin-left: .5em;
+  }
 }

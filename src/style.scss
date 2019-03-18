@@ -3,6 +3,38 @@
 
 @import "theme";
 @import "layout";
+
 @import "components/link";
+@import "components/nav";
+
 @import "components/header";
+@import "components/main";
+
+@import "components/icon";
 @import "components/avatar";
+
+
+.color-swatch {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+  border: #FFF 2px solid;
+  color: #FFF;
+  text-shadow: #000 0 0 5px;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.color-swatch.color-1 {
+  background: $color-1;
+}
+.color-swatch.color-2 {
+  background: $color-2;
+}
+.color-swatch.color-3 {
+  background: $color-3;
+}
+.color-swatch.color-4 {
+  background: $color-4;
+}
