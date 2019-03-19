@@ -82,7 +82,7 @@ header {
 
     &:hover {
       background: $color-2;
-      color: $color-1;
+      color: $color-4;
     }
   }
 
@@ -107,6 +107,11 @@ nav.header-subnav {
     &.active {
       background: $color-3;
       color: $color-1;
+    }
+
+    &:hover {
+      background: $color-2;
+      color: $color-4;
     }
   }
 }
